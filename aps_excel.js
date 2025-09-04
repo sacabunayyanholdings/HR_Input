@@ -49,7 +49,7 @@
             </tr>
           </table>
         </fieldset>
-        <button type="submit" hidden>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     `;
 
