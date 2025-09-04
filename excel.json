@@ -13,14 +13,14 @@
     {
       "kind": "main",
       "tag": "com-fd-djaja-sap-sac-excel",
-      "url": "https://github.com/sacabunayyanholdings/HR_Input/blob/main/excel.js",
+      "url": "https://raw.githubusercontent.com/sacabunayyanholdings/HR_Input/refs/heads/main/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-fd-djaja-sap-sac-excel-aps",
-      "url": "https://raw.githubusercontent.com/varunchhonker/SACFileUploader/main/aps_excel.js",
+      "url": "https://raw.githubusercontent.com/sacabunayyanholdings/HR_Input/refs/heads/main/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
