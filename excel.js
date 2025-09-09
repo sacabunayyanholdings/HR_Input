@@ -404,35 +404,47 @@
                                         });
                                         console.log(oModel);
 
-                                        var oHeaders =  {
-                                            "Authorization": "Basic XXXXXXXX",
-                                            "Content-Type": "application/x-www-form-urlencoded"
-                                        }
+                                        // var oHeaders =  {
+                                        //   "Authorization": "Basic XXXXXXXX",
+                                        //    "Content-Type": "application/x-www-form-urlencoded"
+                                        // }
 
-                                        var oModel = new JSONModel();
+										_result = JSON.stringify(result_final);
 
-                                        console.log(result_final);
-                                        oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
+										that._firePropertiesChanged();
+										this.settings = {};
+										this.settings.result = "";
 
-                                        oModel.attachRequestCompleted(function() {
-                                            var result = oModel.getData();
-                                            console.log(result);
+										that.dispacthEvent(new CustomeEvent("onStart",{
+											detail:{ 
+												   settings: this.settings
+												   }
+										}));
+										this_.runNext();
+                                        // var oModel = new JSONModel();
 
-                                            _result = result;
+                                        // console.log(result_final);
+                                        // oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
 
-                                            that._firePropertiesChanged();
-                                            this.settings = {};
-                                            this.settings.result = "";
+                                        // oModel.attachRequestCompleted(function() {
+                                        //     var result = oModel.getData();
+                                        //     console.log(result);
 
-                                            that.dispatchEvent(new CustomEvent("onStart", {
-                                                detail: {
-                                                    settings: this.settings
-                                                }
-                                            }));
+                                        //     _result = result;
 
-                                            this_.runNext();
+                                        //     that._firePropertiesChanged();
+                                        //     this.settings = {};
+                                        //     this.settings.result = "";
 
-                                        });
+                                        //     that.dispatchEvent(new CustomEvent("onStart", {
+                                        //         detail: {
+                                        //             settings: this.settings
+                                        //         }
+                                        //     }));
+
+                                        //     this_.runNext();
+
+                                        // });
 
 
                                         fU.setValue("");
