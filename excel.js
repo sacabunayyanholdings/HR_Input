@@ -135,7 +135,7 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             var that = this;
 
-            let xlsxjs = "https://raw.githubusercontent.com/sacabunayyanholdings/HR_Input/refs/heads/main/xlsx.js";
+            let xlsxjs = "https://sacabunayyanholdings.github.io/HR_Input/xlsx.js";
             async function LoadLibs() {
                 try {
                     await loadScript(xlsxjs, _shadowRoot);
