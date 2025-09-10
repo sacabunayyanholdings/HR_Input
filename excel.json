@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.excel",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "name": "Position",
   "description": "Position",
   "newInstancePrefix": "Position",
@@ -13,14 +13,14 @@
     {
       "kind": "main",
       "tag": "com-fd-djaja-sap-sac-excel",
-      "url": "https://sacabunayyanholdings.github.io/HR_Input/excel.js",
+      "url": "https://sacabunayyanholdings.github.io/refs/heads/main/excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-fd-djaja-sap-sac-excel-aps",
-      "url": "https://sacabunayyanholdings.github.io/HR_Input/aps_excel.js",
+      "url": "https://sacabunayyanholdings.github.io/refs/heads/main/aps_excel.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
